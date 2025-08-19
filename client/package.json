@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "vercel-build": "vite build",
+    "vercel-build": "npm install && vite build",
     "build:vercel": "vite build",
     "vercel-build:frontend": "vite build",
     "build:production": "vite build --mode production"
