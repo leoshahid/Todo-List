@@ -25,7 +25,7 @@ npm run install:all
 ```bash
 cd server
 # Create .env file with:
-PORT=5000
+PORT=5001
 MONGO_URI=mongodb+srv://munirrajpoot1012:codavium123@cluster0.ur4pgrf.mongodb.net/codaviumTech?retryWrites=true&w=majority&appName=Cluster0
 JWT_SECRET=your-local-jwt-secret
 NODE_ENV=development
@@ -36,7 +36,7 @@ NODE_ENV=development
 ```bash
 cd client
 # Copy env.local.example to .env.local:
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=http://localhost:5001/api
 VITE_APP_NAME=Todo App (Local)
 ```
 
@@ -99,19 +99,19 @@ todo-app/
 ## 🌐 Access Points
 
 - **Frontend**: http://localhost:5173
-- **Backend API**: http://localhost:5000
-- **API Endpoints**: http://localhost:5000/api/\*
+- **Backend API**: http://localhost:5001
+- **API Endpoints**: http://localhost:5001/api/\*
 
 ## 🐛 Troubleshooting
 
 ### Port Already in Use
 
 ```bash
-# Kill process using port 5000
-lsof -ti:5000 | xargs kill -9
+# Kill process using port 5001
+lsof -ti:5001 | xargs kill -9
 
 # Or change port in server/.env
-PORT=5001
+PORT=5002
 ```
 
 ### Frontend Can't Connect to Backend

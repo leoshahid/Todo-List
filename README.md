@@ -50,7 +50,7 @@ A full-stack Todo application built with React (Frontend) and Node.js/Express (B
 
 4. **Access your app:**
    - Frontend: http://localhost:5173
-   - Backend: http://localhost:5000
+   - Backend: http://localhost:5001
 
 ### Manual Setup
 
@@ -111,7 +111,7 @@ Deploy both frontend and backend together in one Vercel project:
 
 #### Backend
 
-- `PORT`: Server port (default: 5000)
+- `PORT`: Server port (default: 5001)
 - `MONGO_URI`: MongoDB connection string
 - `JWT_SECRET`: Secret key for JWT tokens
 - `NODE_ENV`: Environment (development/production)
