@@ -5,13 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npx vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "vercel-build": "npm install && vite build",
-    "build:vercel": "vite build",
-    "vercel-build:frontend": "vite build",
-    "build:production": "vite build --mode production"
+    "vercel-build": "npm install && npx vite build",
+    "build:vercel": "npx vite build",
+    "vercel-build:frontend": "npx vite build",
+    "build:production": "npx vite build --mode production"
   },
   "description": "Todo App Frontend",
   "engines": {
