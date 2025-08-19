@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "vercel-build": "vite build",
     "build:vercel": "vite build",
-    "vercel-build:frontend": "vite build"
+    "vercel-build:frontend": "vite build",
+    "build:production": "vite build --mode production"
   },
   "description": "Todo App Frontend",
   "engines": {

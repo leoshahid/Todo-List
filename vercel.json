@@ -4,14 +4,16 @@
     {
       "src": "client/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
+      "config": {
+        "distDir": "dist",
+        "buildCommand": "npm run build:production"
+      }
     },
     { "src": "server/server.js", "use": "@vercel/node" }
   ],
-  "routes": [
-    { "src": "^/api/(.*)$", "dest": "/server/server.js" },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/server/server.js" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "env": { "NODE_ENV": "production" }
 }
