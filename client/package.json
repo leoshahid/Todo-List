@@ -10,6 +10,10 @@
     "preview": "vite preview",
     "vercel-build": "vite build"
   },
+  "description": "Todo App Frontend",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",

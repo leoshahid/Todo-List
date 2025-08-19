@@ -17,6 +17,9 @@
   "author": "",
   "license": "ISC",
   "description": "Todo App Backend API",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
