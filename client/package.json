@@ -8,9 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "vercel-build": "npm run build",
-    "build:vercel": "vite build",
-    "vercel-build:frontend": "vite build"
+    "vercel-build": "vite build",
+    "build:vercel": "vite build"
   },
   "description": "Todo App Frontend",
   "engines": {

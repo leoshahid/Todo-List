@@ -4,7 +4,9 @@
     {
       "src": "client/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
+      "config": {
+        "distDir": "dist"
+      }
     },
     {
       "src": "server/server.js",
@@ -12,8 +14,16 @@
     }
   ],
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/server/server.js" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/api/(.*)",
+      "destination": "/server/server.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ],
-  "env": { "NODE_ENV": "production" }
+  "env": {
+    "NODE_ENV": "production"
+  }
 }

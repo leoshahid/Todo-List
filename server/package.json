@@ -7,8 +7,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "build": "echo 'Build completed'",
-    "vercel-build": "echo 'Vercel build completed'",
-    "build:frontend": "echo \"(server) skipping frontend build\""
+    "vercel-build": "echo 'Vercel build completed'"
   },
   "keywords": [
     "todo",
