@@ -14,7 +14,8 @@
     "dev:backend": "cd server && npm run dev",
     "dev:frontend": "cd client && npm run dev",
     "install:all": "npm install && cd server && npm install && cd ../client && npm install",
-    "start": "cd server && npm start"
+    "start": "cd server && npm start",
+    "build:frontend": "echo \"(root) skipping frontend build\""
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
