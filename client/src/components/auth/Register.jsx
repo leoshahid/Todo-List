@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthForm from "./AuthForm";
 import { Link } from "@mui/material";
-import axios from "axios";
+import api from "../../utils/api";
 import { toast } from "react-toastify";
 
 const Register = () => {
@@ -36,15 +36,14 @@ const Register = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/auth/register", {
+      await api.post("/auth/register", {
         name,
         email,
         password,
       });
 
       toast.success("Account created successfully!");
-              navigate("/login");
-
+      navigate("/login");
     } catch (err) {
       const msg = err.response?.data?.message || "Registration failed";
       setError(msg);
@@ -88,7 +87,7 @@ const Register = () => {
           </Link>
         </>
       }
-      imageUrl= "/Images/register.jpg" 
+      imageUrl="/Images/register.jpg"
     />
   );
 };

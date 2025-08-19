@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthForm from "./AuthForm";
-import axios from "axios";
+import api from "../../utils/api";
 import { toast } from "react-toastify";
 
 const Login = () => {
@@ -17,7 +17,7 @@ const Login = () => {
     setError("");
 
     try {
-      const { data } = await axios.post("http://localhost:5000/api/auth/login", {
+      const { data } = await api.post("/auth/login", {
         email,
         password,
       });
@@ -55,7 +55,7 @@ const Login = () => {
       isLoading={isLoading}
       error={error}
       checkboxText="Remember me"
-      imageUrl= "/Images/login.jpg"
+      imageUrl="/Images/login.jpg"
     />
   );
 };
