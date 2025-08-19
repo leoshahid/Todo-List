@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Todo App with React frontend and Node.js backend",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "cd server && npm run dev",
